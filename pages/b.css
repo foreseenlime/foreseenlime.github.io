@@ -1,0 +1,239 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+    color: white;
+}
+
+body {
+    background-image: url(../imgs/background.jpg);
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;   
+}
+
+.banner {
+    display: flex;
+    height: 100px;
+    padding: 20px;
+    padding-left: 40px;
+
+    font-size: 23px;
+
+    background-color: #00733d;
+    color: white;
+}
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 40px;
+}
+
+.header-one {
+    align-self: flex-start;
+}
+
+#red-text {
+    color: #de1714;
+}
+
+.header-two {
+    align-self: flex-end;
+}
+
+.icon {
+    margin-left: 20px;
+    height: 100%;
+}
+
+.descript-holder {
+    display: flex;
+
+    flex-direction: column;
+}
+
+#descriptions-one, #descriptions-two, #descriptions-three{
+    font-size: 1px;
+
+    user-select: none;
+
+    color: #00733d; 
+}
+
+p {
+    margin: 10px;
+
+    font-size: 20px;
+}
+
+.about-us {
+    width: 60%;
+
+    line-height: 30px;
+
+    margin: 30px;
+    margin-left: 10%;
+}
+
+.recent {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 65px;
+}
+
+.newsdiv {
+    display: flex;
+
+    width: 70%;
+
+    overflow-x: auto;
+    overflow-y: auto;
+
+    padding-bottom: 10px;
+    margin-left: 60px;
+}
+
+.newsdiv::-webkit-scrollbar{
+    background-color: whitesmoke;
+
+    height: 10px;
+
+    border-radius: 3px;
+}
+
+.newsdiv::-webkit-scrollbar-thumb{
+    background-color: grey;
+
+    border-radius: 3px;
+}
+
+.news1 {
+    width: 150px;
+    height: 175px;
+
+    border-style: solid;
+    border-radius: 8px;
+
+    margin-inline: 10px;
+    padding: 5px;
+}
+
+.descript {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 20px;
+
+    margin-top: 0%;
+}
+
+.news1:hover {
+    box-shadow: 3px 3px 1px;
+}
+
+.aiicon {
+    width: 151px;
+    height: 151px;
+    border-radius: 5px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    
+    height: 100%;
+    width: 15%;
+
+    margin-right: 80px;
+    margin-top: 30px;
+
+    box-shadow: 5px 5px 10px black;
+    
+    background-color: #d73c4b;
+    border-top: white;
+}
+
+.sidebar * {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bar-opts {
+    margin: 20px;
+
+    user-select: none;
+
+    text-decoration: none;
+}
+
+.bar-opts:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    height: 150px;
+    width: 100%;
+    
+    position: fixed;
+    bottom: 0;
+
+    background-color: lightgray;
+}
+
+.footertext {
+    color: black;
+
+    font-size: 15px;
+    width: 77%;
+
+    margin: 20px;
+}
+
+
+/* ABOUT US PAGE: */
+
+.about-teams {
+    margin-left: 10%;
+    margin-top: 40px;
+
+    width: 60%;
+}
+
+.button-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.teamA-title, .teamB-title, .teamC-title{
+    border-style: solid;
+    border-radius: 10px;
+
+    user-select: none;
+
+    padding: 5px;
+}
+
+.teamA-title:hover, .teamB-title:hover, .teamC-title:hover{
+    box-shadow: 0px 0px 10px;
+}
+
+.teamA-title:active, .teamB-title:active, .teamC-title:active{
+    background-color: white;
+
+    color: black;
+}
+
+#team-description {
+    margin-top: 30px;
+
+    line-height: 25px;
+}
