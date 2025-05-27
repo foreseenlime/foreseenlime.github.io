@@ -3,6 +3,8 @@ const teamA = document.getElementById("teamA");
 const teamB = document.getElementById("teamB");
 const teamC = document.getElementById("teamC");
 
+const selected = document.querySelectorAll(".selected");
+
 //textbox to change when button pressed
 const descript = document.getElementById("team-description");
 var currTeam = 0;
@@ -17,19 +19,37 @@ const descriptTwo = desTwoBox.innerHTML;
 const desThreeBox = document.getElementById("descriptions-three");
 const descriptThree = desThreeBox.innerHTML;
 
-function printText(num){
+function printText(num, team){
 
     switch (num) {
         case 1:
             descript.textContent = descriptOne;
+
+            //add and remove the necessary classes
+            teamA.classList.add("selected");
+            teamB.classList.remove("selected");
+            teamC.classList.remove("selected");
+
             break;
 
         case 2:
             descript.textContent = descriptTwo;
+
+            //add and remove the necessary classes
+            teamA.classList.remove("selected");
+            teamB.classList.add("selected");
+            teamC.classList.remove("selected");
+
             break;
 
         case 3:
             descript.textContent = descriptThree;
+
+            //add and remove the necessary classes
+            teamA.classList.remove("selected");
+            teamB.classList.remove("selected");
+            teamC.classList.add("selected");
+
             break;
     
         default:
@@ -40,15 +60,15 @@ function printText(num){
 
 teamA.onclick = function(){
     currTeam = 1;
-    printText(currTeam);
+    printText(currTeam, teamA);
 };
 
 teamB.onclick = function(){
     currTeam = 2;
-    printText(currTeam);
+    printText(currTeam, teamB);
 };
 
 teamC.onclick = function(){
     currTeam = 3;
-    printText(currTeam);
+    printText(currTeam, teamC);
 };

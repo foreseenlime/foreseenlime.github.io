@@ -226,10 +226,21 @@ a {
     box-shadow: 0px 0px 10px;
 }
 
+
+/* commented out this because it doesnt look good with the .selected styles
+could add back later if the buttons need to look more responsive
+
 .teamA-title:active, .teamB-title:active, .teamC-title:active{
     background-color: white;
 
     color: black;
+    border-color: white;
+} */
+
+.selected {
+    background-color: white;
+    color: black;
+    border-color: white;
 }
 
 #team-description {
