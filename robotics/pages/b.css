@@ -77,6 +77,9 @@ p {
 
     margin: 30px;
     margin-left: 10%;
+
+    font-size: 1.5em;
+    line-height: 30px;
 }
 
 .recent {
@@ -246,5 +249,8 @@ could add back later if the buttons need to look more responsive
 #team-description {
     margin-top: 30px;
 
-    line-height: 25px;
+    font-size: 2em;
+    text-align: center;
+
+    line-height: 35px;
 }
