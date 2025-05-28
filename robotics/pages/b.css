@@ -254,3 +254,37 @@ could add back later if the buttons need to look more responsive
 
     line-height: 35px;
 }
+
+/* ABOUT US PAGE END */
+
+/* SUPPORT US PAGE: */
+
+.support-text {
+    width: 60%;
+
+    line-height: 30px;
+
+    margin: 30px;
+    margin-left: 10%;
+
+    font-size: 1.5em;
+    line-height: 30px;
+
+    text-align: center;
+}
+
+.support-title {
+    margin-top: 50px;
+
+    color: red;
+}
+
+.support-descript{
+    font-size: 30px;
+
+    margin-top: 50px;
+}
+
+.givealittle {
+    text-decoration: underline;
+}
