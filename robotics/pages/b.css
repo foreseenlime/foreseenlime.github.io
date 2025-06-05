@@ -342,13 +342,14 @@ could add back later if the buttons need to look more responsive
         height: 100px;
         font-size: 23px;
 
-        width: 100%;
+
+        width: 100vw;
         margin: 0%;
     }
 
-    .support-text {
-        width: 95%;
+    .support-text, .about-us, .newsdiv, .about-teams{
+        width: 80%;
         margin-left: 0px;
-        margin-inline: 5%;
+        margin-inline: 10%;
     }
 }
