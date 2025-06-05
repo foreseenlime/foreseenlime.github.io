@@ -288,3 +288,67 @@ could add back later if the buttons need to look more responsive
 .givealittle {
     text-decoration: underline;
 }
+
+.sponsors-div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* jackson sponsor img */
+.sponsor4 {
+    height: 80px;
+    margin-right: 20px;
+}
+
+/* royal society img */
+.sponsor5 {
+    height: 160px;
+    margin-left: 20px;
+}
+
+.sponsors-div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* crittall arnold img */
+.sponsor1 {
+    height: 110px;
+}
+
+/* design production img */
+.sponsor2 {
+    height: 90px;
+    margin-inline: 40px;
+}
+
+/* food and dairy img */
+.sponsor3 {
+    height: 90px;
+}
+
+/* SUPPORT PAGE END */
+
+/* @MEDIA QUERY FOR WIDTH */
+
+@media only screen and (max-width: 1300px) {
+    .sidebar {
+        display: none;
+    }
+
+    .banner {
+        height: 100px;
+        font-size: 23px;
+
+        width: 100%;
+        margin: 0%;
+    }
+
+    .support-text {
+        width: 95%;
+        margin-left: 0px;
+        margin-inline: 5%;
+    }
+}
