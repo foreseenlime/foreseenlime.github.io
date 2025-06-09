@@ -9,6 +9,8 @@ body {
     background-image: url(../imgs/background.jpg);
     background-size: cover;
 
+    font-family: "Roboto", sans-serif;
+
     width: 100%;
     height: 100%;   
 }
@@ -331,11 +333,60 @@ could add back later if the buttons need to look more responsive
 
 /* SUPPORT PAGE END */
 
+/* NEWS PAGE */
+
+.news-content {
+    width: 60%;
+
+    line-height: 30px;
+
+    margin: 30px;
+    margin-left: 10%;
+
+    font-size: 1.5em;
+    line-height: 30px;
+}
+
+.news-box {
+    border-style: solid;
+    border-width: 2.5px;
+    border-radius: 5px;
+    border-color: grey;
+
+    background-color: rgb(52, 52, 52);
+
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.news-head {
+    font-size: 30px;
+}
+
+/* NEWS PAGE END */
+
 /* @MEDIA QUERY FOR WIDTH */
 
 @media only screen and (max-width: 1300px) {
     .sidebar {
-        display: none;
+        margin-right: 0px;
+        margin-top: 0px;
+
+        background-color: #00733d;
+
+        box-shadow: none;
+
+        width: 100px;
+        height: 140px;
+        font-size: 15px;
+        
+    }
+
+    .bar-opts {
+        margin: 1px;
+        margin-right: 5px;
+        margin-top: 5px;
+        text-align: right;
     }
 
     .banner {
@@ -347,7 +398,7 @@ could add back later if the buttons need to look more responsive
         margin: 0%;
     }
 
-    .support-text, .about-us, .newsdiv, .about-teams{
+    .support-text, .about-us, .newsdiv, .about-teams, .news-content{
         width: 80%;
         margin-left: 0px;
         margin-inline: 10%;
