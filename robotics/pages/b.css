@@ -368,18 +368,21 @@ could add back later if the buttons need to look more responsive
 /* @MEDIA QUERY FOR WIDTH */
 
 @media only screen and (max-width: 1300px) {
+    body {
+        width: 100%;
+    }
+    
     .sidebar {
         margin-right: 0px;
         margin-top: 0px;
 
-        background-color: #00733d;
+        background-color: transparent;
 
         box-shadow: none;
 
         width: 100px;
         height: 140px;
         font-size: 15px;
-        
     }
 
     .bar-opts {
@@ -402,5 +405,42 @@ could add back later if the buttons need to look more responsive
         width: 80%;
         margin-left: 0px;
         margin-inline: 10%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    body {
+        width: 100%;
+    }
+
+    .banner {
+        padding-left: 20px;
+
+    }
+
+    .icon-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        margin-left: 0px;
+        width: 50px;
+        height: 75px;
+    }
+
+    .headers {
+        justify-content: center;
+
+        margin-left: 10px;
+    }
+    
+    .header-one {
+        font-size: 35px;
+    }
+
+    .header-two {
+        display: none;
     }
 }
