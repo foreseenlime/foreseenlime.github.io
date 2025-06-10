@@ -331,6 +331,12 @@ could add back later if the buttons need to look more responsive
     height: 90px;
 }
 
+.tnc {
+    color: rgb(83, 83, 83);
+
+    font-size: 10px;
+}
+
 /* SUPPORT PAGE END */
 
 /* NEWS PAGE */

@@ -5,6 +5,7 @@
 ### Important stuff<br>
 Anything in this website is free to use for your own stuff and/or modify, as long as it doesn't get profited off<br>
 Credit/acknowledgement would be greatly appreciated for anything used, especially logos/emblems from our school and club<br>
+If necessary for any reason, please reach out to me at: troyhkiwi@gmail.com<br>
 
 ### Robotics website<br>
 The robotics website was made for my year 11 digital tech assessment, which was to make a website for a club in our school<br>
@@ -18,4 +19,4 @@ The clicker game was made in about a week, just to fill the time spend between f
 It was heavily inspired by another game I had found online, that I changed a bit, but it is still very similar<br>
 Link to other game: https://haitchourtea.neocities.org/blahaj<br>
 
-If necessary, please email me at: troyhkiwi@gmail.com<br>
+I put some small easter eggs in this website, see if you can find them!
