@@ -1,0 +1,28 @@
+* 
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+.table 
+{
+    border-style: solid;
+}
+
+.left 
+{
+    border-style: solid;
+    border-color: red;
+}
+
+.middle 
+{
+    border-style: solid;
+    border-color: blue;
+}
+
+.right
+{
+    border-style: solid;
+    border-color: yellow;
+}
