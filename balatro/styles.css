@@ -7,22 +7,119 @@
 .table 
 {
     border-style: solid;
+
+    display: flex;
+    justify-content: center;
 }
 
+/* --------------------------START OF LEFT SECTION------------------------- */
+
+/* main left side container */
 .left 
 {
     border-style: solid;
     border-color: red;
+
+    width: 20%;
 }
+
+/* all boxes in the side bar */
+.title, .score, .points, .moves, .games_played
+{
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: rgb(32, 32, 32);
+
+    padding: 5px;
+
+    background-color: rgb(55, 55, 55);
+    color: white;
+}
+
+.title, .score, .moves, .games_played, .points_2
+{
+    display: flex;
+}
+
+.title, .score, .points, .moves
+{
+    margin-bottom: 10px;
+}
+
+/* score stuff */
+
+.score
+{
+    align-items: center;
+    padding-inline: 10px;
+
+    font-size: 2.5em;
+}
+
+.score_num
+{
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: rgb(32, 32, 32);
+
+    margin-left: 10px;
+
+    text-align: center;
+
+    width: 85%;
+}
+
+/* mult stuff */
+.chips-points, .times, .mult-points
+{
+    font-size: 2.5em;
+    margin-inline: 1px;
+}
+
+.chips-points, .mult-points
+{
+    width: 40%;
+
+    text-align: right;
+
+    border-style: solid;
+    border-radius: 10px;
+
+    padding-inline: 5px;
+}
+
+.chips-points
+{
+    background-color: rgb(96, 96, 255);
+    border-color: rgb(96, 96, 255);
+}
+
+.mult-points
+{
+    background-color: rgb(255, 80, 80);
+    border-color: rgb(255, 80, 80);
+}
+
+/* --------------------------START OF MIDDLE SECTION------------------------- */
+
 
 .middle 
 {
     border-style: solid;
     border-color: blue;
+
+    width: 60%;
 }
+
+/* --------------------------START OF RIGHT SECTION------------------------- */
+
 
 .right
 {
     border-style: solid;
     border-color: yellow;
+
+    width: 20%;
 }
