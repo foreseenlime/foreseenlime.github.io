@@ -4,12 +4,21 @@
     padding: 0%;
 }
 
+body
+{
+    background-image: url(background.png);
+    background-size: cover;
+}
+
 .table 
 {
     border-style: solid;
 
+    height: 100vh;
+
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* --------------------------START OF LEFT SECTION------------------------- */
@@ -17,14 +26,18 @@
 /* main left side container */
 .left 
 {
+    top: 0px;
+    bottom: 0px;
+
     border-style: solid;
     border-color: red;
 
-    width: 20%;
+    margin-left: 2%;
+    width: 18%;
 }
 
 /* all boxes in the side bar */
-.title, .score, .points, .moves, .games_played
+.title, .score, .points, .moves, .money, .games_played
 {
     border-style: solid;
     border-width: 6px;
@@ -37,18 +50,17 @@
     color: white;
 }
 
-.title, .score, .moves, .games_played, .points_2
+.title, .score, .menus, .moves, .money, .games_played, .points_2
 {
     display: flex;
 }
 
-.title, .score, .points, .moves
+.title, .score, .points, .moves, .money
 {
     margin-bottom: 10px;
 }
 
 /* score stuff */
-
 .score
 {
     align-items: center;
@@ -57,7 +69,7 @@
     font-size: 2.5em;
 }
 
-.score_num
+#score_num
 {
     border-style: solid;
     border-width: 6px;
@@ -72,13 +84,24 @@
 }
 
 /* mult stuff */
-.chips-points, .times, .mult-points
+
+.points
 {
-    font-size: 2.5em;
-    margin-inline: 1px;
+    padding: 10px;
 }
 
-.chips-points, .mult-points
+#hand-type
+{
+    margin-bottom: 5px;
+}
+
+#chips-points, .times, #mult-points
+{
+    font-size: 2.5em;
+    margin-inline: 2px;
+}
+
+#chips-points, #mult-points
 {
     width: 40%;
 
@@ -90,17 +113,133 @@
     padding-inline: 5px;
 }
 
-.chips-points
+#chips-points
 {
     background-color: rgb(96, 96, 255);
     border-color: rgb(96, 96, 255);
 }
 
-.mult-points
+#mult-points
 {
     background-color: rgb(255, 80, 80);
     border-color: rgb(255, 80, 80);
 }
+
+/* menu on right and other stuff on left */
+.left-left
+{
+    float: left;
+    width: 40%;
+}
+
+.left-right
+{
+    float: right;
+    width: 60%;
+}
+
+/* menu buttons */
+
+.menus
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.run-info, .menu-options
+{
+    width: 80%;
+    height: 120px;
+
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-radius: 8px;
+
+    box-shadow: 4px 4px 2px black;
+}
+
+.run-info
+{
+    background-color: rgb(255, 80, 80);
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.menu-options
+{
+    line-height: 100px;
+    background-color: orange;
+}
+
+/* hands and discards stuff */
+
+.moves
+{
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.hands, .discards
+{
+    font-size: 1em;
+
+    padding: 3px;
+
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: rgb(32, 32, 32);
+}
+
+#hands-number, #discards-number
+{
+    font-size: 2em;
+}
+
+/* money stuff */
+
+.money
+{
+    justify-content: center;
+}
+
+#money-number
+{
+    color: orange;
+}
+
+/* round and ante stuff */
+
+.games_played
+{
+    justify-content: space-evenly;
+}
+
+.ante, .round
+{
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: rgb(32, 32, 32);
+
+    padding: 5px;
+
+    text-align: center;
+}
+
+.ante-number, .round-number
+{
+    font-size: 1.5em;
+    color: orange;
+}
+
+
+
 
 /* --------------------------START OF MIDDLE SECTION------------------------- */
 
@@ -121,5 +260,6 @@
     border-style: solid;
     border-color: yellow;
 
-    width: 20%;
+    margin-right: 2%;
+    width: 18%;
 }
