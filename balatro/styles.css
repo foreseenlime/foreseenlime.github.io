@@ -6,7 +6,7 @@
 
 body
 {
-    background-image: url(background.png);
+    background-image: url(../balatro/background.png);
     background-size: cover;
 }
 
