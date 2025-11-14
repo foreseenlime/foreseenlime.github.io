@@ -47,13 +47,34 @@ h1
     text-align: center;
     color: #88D18A;
 
+    user-select: none;
+
     margin-bottom: 5px;
 }
+
+/* h2
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #96a088;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+} */
 
 a 
 {
     color: #CCDDB7;
-    text-decoration: none;
+    text-decoration: underline;
+
+    user-select: none;
+
+    transition: transform 1s;
+}
+
+a:hover
+{
+    color: #96a088;
 }
 
 @media only screen and (max-width: 1100px) 

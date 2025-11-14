@@ -6,14 +6,12 @@
 
 body
 {
-    background-image: url(../balatro/background.png);
+    background-image: url(misc/background.png);
     background-size: cover;
 }
 
 .table 
 {
-    border-style: solid;
-
     height: 100vh;
 
     display: flex;
@@ -29,11 +27,18 @@ body
     top: 0px;
     bottom: 0px;
 
-    border-style: solid;
-    border-color: red;
+    background-color: rgb(55, 55, 55);
+    border: solid 4px rgb(68, 68, 189);
+    border-top: 0px;
+    border-bottom: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     margin-left: 2%;
     width: 18%;
+    height: 100%;
 }
 
 /* all boxes in the side bar */
@@ -58,6 +63,11 @@ body
 .title, .score, .points, .moves, .money
 {
     margin-bottom: 10px;
+}
+
+.title
+{
+    height: 150px;
 }
 
 /* score stuff */
@@ -246,11 +256,30 @@ body
 
 .middle 
 {
-    border-style: solid;
-    border-color: blue;
-
+    height:100%;
     width: 60%;
 }
+
+.jokers
+{
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.119);
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+}
+
+.card
+{
+    width: 130px;
+    margin-inline: 5px;
+}
+
 
 /* --------------------------START OF RIGHT SECTION------------------------- */
 
