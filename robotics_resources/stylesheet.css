@@ -52,16 +52,6 @@ h1
     margin-bottom: 5px;
 }
 
-/* h2
-{
-    border-style: solid;
-    border-width: 1px;
-    border-color: #96a088;
-    border-top-style: hidden;
-    border-left-style: hidden;
-    border-right-style: hidden;
-} */
-
 a 
 {
     color: #CCDDB7;
@@ -75,6 +65,30 @@ a
 a:hover
 {
     color: #96a088;
+}
+
+.rpm_bothboxes 
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.rpm_box > button, .doublebutton > button
+{
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+
+    background-color: white;
+    color: black;
+
+    border-radius: 5px;
+}
+
+.rpm_display 
+{
+    color: #CCDDB7;
 }
 
 @media only screen and (max-width: 1100px) 
