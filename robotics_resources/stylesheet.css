@@ -6,6 +6,19 @@
     font-size: 30px;
 }
 
+:root
+{
+    --box-background: rgba(12,12,12,0.7);
+    --box-border: rgb(183, 179, 179);
+
+    --primary-text: #88D18A;
+    --secondary-text: #CCDDB7;
+    --secondary-text-hover: #96a088;
+
+    --button-background: white;
+    --button-text: black;
+}
+
 body 
 {
     background-image: url(../robotics/imgs/background.jpg);
@@ -22,10 +35,10 @@ body
 
 .box 
 {
-    border: solid 1px rgb(183, 179, 179);
+    border: solid 1px var(--box-border);
     border-radius: 8px;
 
-    background-color: rgba(12,12,12,0.7);
+    background-color: var(--box-background);
 
     padding: 20px; 
     margin: 20px;
@@ -38,14 +51,14 @@ body
 .box:hover 
 {
     transform: translate(0px, -10px);
-    box-shadow: 0px 10px 5px rgba(12,12,12,0.7);
+    box-shadow: 0px 10px 5px var(--box-background);
 }
 
 h1
 {
     font-size: 40px;
     text-align: center;
-    color: #88D18A;
+    color: var(--primary-text);
 
     user-select: none;
 
@@ -54,7 +67,7 @@ h1
 
 a 
 {
-    color: #CCDDB7;
+    color: var(--secondary-text);
     text-decoration: underline;
 
     user-select: none;
@@ -64,7 +77,7 @@ a
 
 a:hover
 {
-    color: #96a088;
+    color: var(--secondary-text-hover);
 }
 
 .rpm_bothboxes 
@@ -74,21 +87,21 @@ a:hover
     justify-content: space-evenly;
 }
 
-.rpm_box > button, .doublebutton > button
+button
 {
     margin: 10px;
     padding: 5px;
     font-size: 20px;
 
-    background-color: white;
-    color: black;
+    background-color: var(--button-background);
+    color: var(--button-text);
 
     border-radius: 5px;
 }
 
 .rpm_display 
 {
-    color: #CCDDB7;
+    color: var(--secondary-text);
 }
 
 @media only screen and (max-width: 1100px) 
