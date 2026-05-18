@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPM calculator</title>
-    <link rel="stylesheet" href="calculator_stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
     <a href="home.html">
         <button>Back to home</button>
     </a>
 
-	<div class="bothboxes">
+	<div class="rpm_bothboxes">
 
 		<!-- rpm calculator!! -->
-		<div class="rpm_calculator bigbox">
-			<h1>RPM Calculator</h1>
+		<div class="rpm_calculator box">
+			<h1 class="rpm_h1">RPM Calculator</h1>
 
-			<div class="input_teeth box">
-				<h2 id="input_teeth_display">Input teeth: 0</h2>
+			<div class="input_teeth rpm_box">
+				<h2 id="input_teeth_display" class="rpm_display">Input teeth: 0</h2>
 				<button id="input_teeth_input">Input teeth</button>
 			</div>
 
-			<div class="output_teeth box">
-				<h2 id="output_teeth_display">Output teeth: 0</h2>
+			<div class="output_teeth rpm_box">
+				<h2 id="output_teeth_display" class="rpm_display">Output teeth: 0</h2>
 				<button id="output_teeth_input">Output teeth</button>
 			</div>
 
-			<div class="input_rpm box">
-				<h2 id="input_rpm_display">Input rpm: 0</h2>
+			<div class="input_rpm rpm_box">
+				<h2 id="input_rpm_display" class="rpm_display">Input rpm: 0</h2>
 				<button id="input_rpm_input">Input RPM</button>
 			</div>
 
-			<div class="output_rpm box">
-				<h2 id="output_rpm_display">Output rpm: 0</h2>
+			<div class="output_rpm rpm_box">
+				<h2 id="output_rpm_display" class="rpm_display">Output rpm: 0</h2>
 				<div class="doublebutton">
 					<button id="calculate_rpm">Calculate rpm</button>
 					<button id="set_rpm">Set output rpm</button>
@@ -42,16 +42,16 @@
 		</div>
 
 		<!-- speed calculator -->
-		<div class="speed_calculator bigbox">
-			<h1>Speed calculator</h1>
+		<div class="speed_calculator box">
+			<h1 class="rpm_h1">Speed calculator</h1>
 
-			<div class="wheel_diameter box">
-				<h2 id="wheel_diameter_display">Wheel diameter: 0 inches</h2>
+			<div class="wheel_diameter rpm_box">
+				<h2 id="wheel_diameter_display" class="rpm_display">Wheel diameter: 0 inches</h2>
 				<button id="input_wheel_diameter">Wheel diameter</button>
 			</div>
 
-			<div class="linear_speed box">
-				<h2 id="linear_speed_display">Speed: 0 inches/second</h2>
+			<div class="linear_speed rpm_box">
+				<h2 id="linear_speed_display" class="rpm_display">Speed: 0 inches/second</h2>
 				<button id="calculate_speed">Calculate speed</button>
 			</div>
 
