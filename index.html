@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portal</title>
+    <style>
+        .header {
+            margin-inline: 10px;
+        }
+
+        .links {
+            display: flex;
+        }
+
+        .links > a {
+            margin-inline: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>website portal</h1>
-    <h2>click on button for whatever website you wanted to visit</h2>
+    <div class="header">
+        <h1>Website portal</h1>
+        <h2>Click on button for whatever website you are here for</h2>
+    </div>
 
-    <button onclick="robotics()">robotics website</button>
-    <button onclick="blahaj()">clicker</button>
-    <button onclick="balatro()">balatro copy (wip)</button>
-    <button onclick="robotics_resources()">robotics resources</button>
-
-    <script>
-
-        function robotics() {
-            window.location.href = "robotics/pages/home.html";
-        }
-
-        function blahaj() {
-            window.location.href = "clicker/impmain.html";
-        }
-
-        function balatro() {
-            window.location.href = "balatro/game.html";
-        }
-
-        function robotics_resources() {
-            window.location.href = "robotics_resources/home.html";
-        }
-
-    </script>
+    <div class="links">
+        <a href="robotics_resources/home.html">
+            <h2>Robotics resources</h2>
+        </a>
+        <a href="robotics/pages/home.html">
+            <h2>Robotics website</h2>
+        </a>
+        <a href="clicker/impmain.html">
+            <h2>Tamagochi?</h2>
+        </a>
+        <a href="balatro/game.html">
+            <h2>Balatro copy (WIP)</h2>
+        </a>
+    </div>
 </body>
 </html>
