@@ -1,0 +1,18 @@
+IMAGES:
+
+Construction cone: https://creazilla.com/media/clipart/3158462/cone (Creative commons license) (able to use without attribution)
+Hero image: https://www.pexels.com/photo/vibrant-street-festival-parade-celebration-30693440/ (https://www.pexels.com/license/) (able to use without attribution)
+
+Blurb svg: https://www.123rf.com/free-vector_195664922_a-business-card-of-retro-linear-art-with-geometric-linear-art-graphic-linear-art-minimal-business.html (https://www.123rf.com/license/free/)
+(you cannot legally agree to the eula since your too young, research whether or not this means you cant use the svg, if not just make your own in illustrator)
+
+Card image 1: https://commons.wikimedia.org/wiki/File:Sinulog_Festival_2026_Streetdance_07.jpg
+Card image 2: https://commons.wikimedia.org/wiki/File:Sinulog_Festival_Barangay_Macapso.jpg
+Card image 3: https://commons.wikimedia.org/wiki/File:Sinulog_Festival_Ritual_Showdown_2024-04.jpg
+Questions image: https://commons.wikimedia.org/wiki/File:Sinulog_Festival_(2023)_contingents_in_street_dance_03.jpg
+(all card images use Creative commons attribute-sharealike license) (able to use with attribution)
+
+FONTS:
+
+Bagel Fat One: https://fonts.google.com/specimen/Bagel+Fat+One?preview.script=Latn (SIL Open Font License, provided with the file)
+Instrument Sans: https://fonts.google.com/specimen/Instrument+Sans?preview.script=Latn (SIL Open Font License, provided with the file)

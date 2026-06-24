@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary: #1B9AAA;
+    --secondary: #38DFF5;
+    --accent: #F95738;
+    --light: #F1F6F9;
+    --dark: #252322;
+}
+
+@font-face {
+    font-family: BagelFatOne;
+    src: url(../files/fonts/BagelFatOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: InstrumentSans;
+    src: url(../files/fonts/InstrumentSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* css for legal page!! */
+
+.legal {
+    padding: 50px;
+    padding-inline: 8%;
+}
+
+.legal > div > h1, .legal > div > h2, .legal > div > p {
+    color: var(--dark);
+    font-family: InstrumentSans;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.legal > div > h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.legal > div > h2 {
+    font-size: 30px;
+}
+
+.legal > div > p {
+    font-size: 20px;
+}

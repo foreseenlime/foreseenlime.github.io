@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary: #1B9AAA;
+    --secondary: #38DFF5;
+    --accent: #F95738;
+    --light: #F1F6F9;
+    --dark: #252322;
+}
+
+@font-face {
+    font-family: InstrumentSans;
+    src: url(../files/fonts/InstrumentSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* this stylesheet is just for the under construction pages */
+
+.under-construction {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.under-construction > img {
+    width: 250px;
+}
+
+.construction-text {
+    width: 450px;
+    text-align: center;
+}
+
+.construction-text > h1 {
+    color: var(--dark);
+    font-family: InstrumentSans;
+    font-size: 70px;
+}

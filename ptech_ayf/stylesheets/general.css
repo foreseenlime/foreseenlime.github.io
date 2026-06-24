@@ -1,0 +1,215 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 
+stylesheet for elements common across multiple pages e.g. headers, footers 
+this is just so theres little repetition across the different stylesheets
+and hopefully it will work having multiple stylesheets linked
+*/
+
+:root {
+    --primary: #1B9AAA;
+    --secondary: #38DFF5;
+    --accent: #F95738;
+    --light: #F1F6F9;
+    --dark: #252322;
+}
+
+@font-face {
+    font-family: BagelFatOne;
+    src: url(../files/fonts/BagelFatOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: InstrumentSans;
+    src: url(../files/fonts/InstrumentSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    background-color: var(--light);
+}
+
+/* cta styles */
+
+.cta {
+    text-decoration: none;
+}
+
+.cta > * {
+    color: var(--light);
+    font-family: InstrumentSans;
+    user-select: none;
+    font-weight: normal;
+
+    background-color: var(--accent);
+    border-radius: 6px;
+
+    padding: 8px;
+    padding-inline: 14px;
+}
+
+.cta > *:hover {
+    text-decoration: underline;
+}
+
+/* mirror an image */
+
+.mirrored {
+    transform: scaleX(-1);
+}
+
+/* nav styles */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 70px;
+
+    height: 100px;
+
+    background-color: var(--primary);
+}
+
+.nav > * {
+    user-select: none;
+}
+
+/* nav title styles */
+
+.nav-title {
+    display: flex;
+    align-items: center;
+}
+
+.nav-title > a {
+    text-decoration: none;
+}
+
+.nav-title > a > h1 {
+    text-decoration: none;
+    color: var(--light);
+    font-family: BagelFatOne;
+    font-size: 40px;
+}
+
+/* nav page links styles */
+
+.nav-link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 50%;
+}
+
+.nav-link > a {
+    text-decoration: none;
+}
+
+.nav-link > a > h2 {
+    color: var(--light);
+    text-decoration: none;
+    font-family: InstrumentSans;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.nav-link > a > h2:hover {
+    text-decoration: underline;
+}
+
+.nav-active {
+    text-decoration: underline !important;
+}
+
+/* nav social media links styles */
+
+.nav-socialmedia {
+    display: flex;
+}
+
+.nav-socialmedia > a > i {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 35px;
+
+    margin-inline: 7px;
+}
+
+/* footer styles */
+
+.footer {
+    background-color: var(--dark);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 250px;
+}
+
+/* footer business info styles */
+
+.footer-businessinfo > * {
+    color: var(--light);
+    font-family: InstrumentSans;
+
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.footer-businessinfo > h2, .footer-businessinfo > h3 {
+    font-weight: normal;
+}
+
+.footer-businessinfo > h3 {
+    margin-top: 8px;
+}
+
+/* footer links styles */
+
+.footer-pages > a, .footer-legal > a {
+    color: var(--light);
+    text-decoration: none;
+    font-family: InstrumentSans;
+    font-size: 18px;
+}
+
+.footer-pages > a > h2, .footer-legal > a > h2 {
+    color: var(--light);
+    text-decoration: none;
+    font-family: InstrumentSans;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.footer-pages > a:hover, .footer-legal > a:hover {
+    text-decoration: underline;
+}
+
+/* footer social media styles */
+
+.footer-socialmedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-socialmedia-divider > a {
+    text-decoration: none;
+}
+
+.footer-socialmedia-divider > a > i {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 40px;
+
+    margin-inline: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

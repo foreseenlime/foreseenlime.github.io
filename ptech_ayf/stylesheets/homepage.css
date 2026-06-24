@@ -1,0 +1,302 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary: #1B9AAA;
+    --secondary: #38DFF5;
+    --accent: #F95738;
+    --light: #F1F6F9;
+    --dark: #252322;
+}
+
+@font-face {
+    font-family: InstrumentSans;
+    src: url(../files/fonts/InstrumentSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+find a different font for paragraphs because this one looks bummmm
+also its too bold*/
+
+/* css for homepage!! */
+
+/* hero section */
+
+.hero {
+    background-image: url(../files/images/hero-img.jpg);
+    background-size: cover;
+
+    height: 90vh;
+}
+
+/* cta box */
+
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #1B9AAADD;
+    border-radius: 15px;
+
+    padding: 25px;
+    padding-inline: 35px;
+
+    float: right;
+    margin-right: 10%;
+    margin-top: 20vh;
+
+    width: 400px;
+}
+
+/* cta main text */
+
+.hero-cta > h1, .hero-cta > h2 {
+    color: var(--light);
+    font-family: InstrumentSans;
+}
+
+.hero-cta > h2 {
+    font-weight: normal;
+}
+
+.hero-cta > h1 {
+    margin-bottom: 10px;
+}
+
+/* cta buttons */
+
+.hero-cta-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+.hero-cta-buttons > a > h2 {
+    padding-inline: 40px;
+}
+
+/* blurb area */
+
+.blurb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: auto;
+
+    padding: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    background-color: #38DFF5DD;
+}
+
+.blurb-text {
+    width: 50%;
+}
+
+.blurb-text > p {
+    color: var(--dark);
+    font-family: InstrumentSans;
+    font-size: 25px;
+
+    text-align: center;
+}
+
+.blurb > img {
+    height: 160px;
+}
+
+/* event information section */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin-bottom: 150px;
+}
+
+.info > h1 {
+    color: var(--dark);
+    font-family: InstrumentSans;
+    margin-bottom: 30px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-boxes > div {
+    background-color: var(--primary);
+    border: 10px solid var(--secondary);
+
+    padding: 20px;
+    padding-inline: 30px;
+    border-radius: 15px;
+
+    overflow-y: auto;
+
+    height: 451px;
+
+    width: 30%;
+}
+
+.info-times::-webkit-scrollbar {
+    width: 10px;
+}
+
+.info-times::-webkit-scrollbar-thumb {
+    background-color: var(--light);
+    border-radius: 15px;
+}
+
+.info-boxes > div > * {
+    color: var(--light);
+    font-family: InstrumentSans;
+}
+
+.info-boxes > div > h1 {
+    margin-bottom: 20px;
+}
+
+.info-boxes > div > ul > li {
+    list-style: none;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-boxes > div > ul {
+    text-align: left;
+}
+
+.info-boxes > div > iframe {
+    height: 375px;
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+/* cards section */
+
+.ads {
+    background-color: var(--secondary);
+
+    padding: 30px;
+    margin-bottom: 150px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    
+    overflow-x: auto;
+}
+
+.ads::-webkit-scrollbar {
+    width: 10px;
+}
+
+.ads::-webkit-scrollbar-track {
+    background-color: var(--secondary);
+}
+
+.ads::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: var(--light);
+    border-radius: 15px;
+    border: 4px solid #00000000;
+}
+
+.ads-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    flex: 0 0 25vw;
+    min-width: 300px; 
+
+    background-color: var(--primary);
+
+    padding: 20px;
+    margin-inline: 20px;
+
+    border-radius: 10px;
+}
+
+.ads-card > * {
+    color: var(--light);
+    font-family: InstrumentSans;
+}
+
+.ads-card > h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+#card_img1 {
+    background-image: url(../files/images/card_img_1.jpg);
+    background-size: cover;
+}
+
+#card_img2 {
+    background-image: url(../files/images/card_img_2.jpg);
+    background-size: cover;
+}
+
+#card_img3 {
+    background-image: url(../files/images/card_img_3.jpg);
+    background-size: cover;
+}
+
+/* Questions section!! */
+
+.questions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.questions > img {
+    width: 40vw;
+
+    margin-right: 30px;
+
+    border-radius: 10px;
+}
+
+.questions-side {
+    width: 40vw;
+    text-align: center;
+}
+
+.questions > * {
+    font-family: InstrumentSans;
+    color: var(--dark);
+}
+
+.questions-side > h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.questions-side > h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.questions-side > .cta > h2 {
+    display: inline;
+    padding-inline: 20px;
+}
