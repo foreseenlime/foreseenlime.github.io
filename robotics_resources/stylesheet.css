@@ -4,18 +4,18 @@
     padding: 0;
 
     font-size: 30px;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: normal;
 }
 
 :root
 {
     --box-background: rgba(12,12,12,0.7);
+    --box-background-opaque: rgb(12,12,12);
 
     --primary-text: #e8e8e8;
     --secondary-text: #d9c9c9;
     --secondary-text-hover: #a59999;
-
-    --button-background: white;
-    --button-text: black;
 }
 
 body 
@@ -58,6 +58,7 @@ h1
     font-size: 40px;
     text-align: center;
     color: var(--primary-text);
+    font-weight: bold;
 
     user-select: none;
 
@@ -92,9 +93,10 @@ button
     padding: 5px;
     font-size: 20px;
 
-    background-color: var(--button-background);
-    color: var(--button-text);
+    background-color: var(--box-background-opaque);
+    color: var(--primary-text);
 
+    /* border: solid 1px var(--primary-text); */
     border-radius: 5px;
 }
 
@@ -105,7 +107,7 @@ button
 
 ul 
 {
-    margin-left: 5%;
+    margin-left: 7%;
 }
 
 li
