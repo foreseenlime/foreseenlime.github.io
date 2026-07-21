@@ -103,6 +103,16 @@ button
     color: var(--secondary-text);
 }
 
+ul 
+{
+    margin-left: 5%;
+}
+
+li
+{
+    color: var(--primary-text)
+}
+
 @media only screen and (max-width: 1100px) 
 {
     .container-2
