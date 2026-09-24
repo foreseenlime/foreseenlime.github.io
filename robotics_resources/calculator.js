@@ -1,94 +1,91 @@
-// input teeth stuff
-const input_teeth_display = document.getElementById("input_teeth_display");
-const input_teeth_input = document.getElementById("input_teeth_input");
-var input_teeth = 0;
+// div elements for iteration
+const input_gears_div = document.getElementById("input_gears")
+const output_gears_div = document.getElementById("output_gears")
+const input_rpm_div = document.getElementById("input_rpm")
+const wheel_size_div = document.getElementById("wheel_size")
 
-// output teeth stuff
-const output_teeth_display = document.getElementById("output_teeth_display");
-const output_teeth_input = document.getElementById("output_teeth_input");
-var output_teeth = 0;
+// button elements
+const input_gears_buttons = input_gears_div.querySelectorAll("button")
+const output_gears_buttons = output_gears_div.querySelectorAll("button")
+const input_rpm_buttons = input_rpm_div.querySelectorAll("button")
+const wheel_size_buttons = wheel_size_div.querySelectorAll("button")
 
-// input rpm stuff
-const input_rpm_display = document.getElementById("input_rpm_display");
-const input_rpm_input = document.getElementById("input_rpm_input");
-var input_rpm = 0.0;
+// display elements
+const ratio_display = document.getElementById("ratio_display")
+const rpm_display = document.getElementById("rpm_display")
+const speed_display = document.getElementById("speed_display")
 
-// output rpm
-const output_rpm_display = document.getElementById("output_rpm_display");
-const output_rpm_input = document.getElementById("set_rpm");
-var output_rpm = 0.0;
+// button variables
+var input_teeth
+var output_teeth
 
-// calculate rpm button
-const calculate = document.getElementById("calculate_rpm");
-var ratio = 0.0;
+var input_rpm
+var wheel_size
 
-// wheel diameter
-const wheel_diameter_display = document.getElementById("wheel_diameter_display");
-const wheel_diameter_input = document.getElementById("input_wheel_diameter");
-var wheel_diameter = 0.0;
-var wheel_circumference = 0.0;
+// calculated variables
+var ratio
+var output_rpm
+var lin_speed
 
-// linear speed
-const linear_speed_display = document.getElementById("linear_speed_display");
-const calculate_speed = document.getElementById("calculate_speed");
-var speed = 0.0;
+const trunc = 100
+var circum
 
-
-input_teeth_input.onclick = function()
-{
-    input_teeth = parseInt(prompt("enter input teeth:"));
-    input_teeth_display.innerHTML = `Input teeth: ${input_teeth}`;
+function truncate(num) {
+    return (Math.round(num * trunc)) / trunc
 }
 
-output_teeth_input.onclick = function()
-{
-    output_teeth = parseInt(prompt("enter output teeth:"));
-    output_teeth_display.innerHTML = `Output teeth: ${output_teeth}`;
+function remove_active(elements, item) {
+    elements.forEach(btn => {
+        if(btn.classList.contains("active")) {
+            btn.classList.remove("active")
+        }
+    })
+    item.classList.add("active")
 }
 
-input_rpm_input.onclick = function()
-{
-    input_rpm = parseFloat(prompt("enter input rpm:"));
-    input_rpm_display.innerHTML = `Input rpm: ${input_rpm}`;
-}
+input_gears_buttons.forEach(item => {
+    item.addEventListener("click", () => {
+        input_teeth = parseInt(item.innerHTML)
+        remove_active(input_gears_buttons, item)
+    })
+})
 
-calculate.onclick = function()
-{
-    if(input_teeth != 0 && output_teeth != 0 && input_rpm != 0.0)
-    {
-        ratio = input_teeth / output_teeth;
-        output_rpm = ratio * input_rpm;
-        // display a rounded number for the rpm, but don't change the actual value
-        output_rpm_display.innerHTML = `Output rpm: ${Math.round(output_rpm * 100) / 100}`;
+output_gears_buttons.forEach(item => {
+    item.addEventListener("click", () => {
+        output_teeth = parseInt(item.innerHTML)
+        remove_active(output_gears_buttons, item)
+    })
+})
+
+input_rpm_buttons.forEach(item => {
+    item.addEventListener("click", () => {
+        input_rpm = parseInt(item.innerHTML)
+        remove_active(input_rpm_buttons, item)
+    })
+})
+
+wheel_size_buttons.forEach(item => {
+    item.addEventListener("click", () => {
+        wheel_size = parseFloat(item.innerHTML)
+        remove_active(wheel_size_buttons, item)
+    })
+})
+
+document.addEventListener("click", () => {
+    if(input_teeth != undefined && output_teeth != undefined && input_rpm != undefined) {
+        // gear ratio
+        ratio = truncate(input_teeth / output_teeth)
+        ratio_display.innerHTML = `1 : ${ratio}`
+
+        // rp
+        output_rpm = truncate(input_rpm * ratio)
+        rpm_display.innerHTML = `${output_rpm} rpm`
+
+        if(wheel_size != undefined) {
+            circum = Math.PI * wheel_size
+            lin_speed = truncate((output_rpm * circum) / 60)
+            speed_display.innerHTML = `${lin_speed} inches/s`
+        }
     }
+})
 
-    else
-    {
-        alert("enter all values before calculating ya bum");
-    }
-}
-
-output_rpm_input.onclick = function()
-{
-    output_rpm = parseFloat(prompt("enter output rpm:"));
-    output_rpm_display.innerHTML = `Output rpm: ${output_rpm}`;
-}
-
-wheel_diameter_input.onclick = function()
-{
-    wheel_diameter = parseFloat(prompt("enter wheel diameter (inches)"));
-    // gets wheel circumference (pi * diameter)
-    wheel_circumference = Math.PI * wheel_diameter;
-
-    wheel_diameter_display.innerHTML = `Wheel diameter: ${wheel_diameter} inches`
-}
-
-calculate_speed.onclick = function()
-{
-    if(output_rpm != 0 && wheel_circumference != 0)
-    {
-        // speed = rpm x circumference
-        speed = (output_rpm * wheel_circumference) / 60;
-        linear_speed_display.innerHTML = `Speed: ${Math.round(speed * 100) / 100} inches/second`
-    }
-}

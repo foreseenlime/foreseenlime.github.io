@@ -9,44 +9,66 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <a href="home.html">
         <button>Back to home</button>
     </a>
 
-	<div class="rpm_bothboxes">
+	<div class="container_2">
 
 		<!-- rpm calculator!! -->
-		<div class="rpm_calculator box">
-			<h1 class="rpm_h1">RPM Calculator</h1>
+		<div class="box">
+			<h1>Gearing</h1>
 
-			<div class="input_teeth rpm_box">
-				<h2 id="input_teeth_display" class="rpm_display">Input teeth: 0</h2>
-				<button id="input_teeth_input">Input teeth</button>
+			<div id="input_gears" class="selector">
+				<p>Input teeth:</p>
+				<button>12</button>
+				<button>24</button>
+				<button>36</button>
+				<button>48</button>
+				<button>60</button>
+				<button>72</button>
+				<button>84</button>
 			</div>
 
-			<div class="output_teeth rpm_box">
-				<h2 id="output_teeth_display" class="rpm_display">Output teeth: 0</h2>
-				<button id="output_teeth_input">Output teeth</button>
+			<div id="output_gears" class="selector">
+				<p>Output teeth:</p>
+				<button>12</button>
+				<button>24</button>
+				<button>36</button>
+				<button>48</button>
+				<button>60</button>
+				<button>72</button>
+				<button>84</button>
 			</div>
 
-			<div class="input_rpm rpm_box">
-				<h2 id="input_rpm_display" class="rpm_display">Input rpm: 0</h2>
-				<button id="input_rpm_input">Input RPM</button>
-			</div>
-
-			<div class="output_rpm rpm_box">
-				<h2 id="output_rpm_display" class="rpm_display">Output rpm: 0</h2>
-				<div class="doublebutton">
-					<button id="calculate_rpm">Calculate rpm</button>
-					<button id="set_rpm">Set output rpm</button>
-				</div>
+			<div id="input_rpm" class="selector">
+				<p>Input RPM:</p>
+				<button>100</button>
+				<button>200</button>
+				<button>600</button>
 			</div>
 		</div>
 
-		<!-- speed calculator -->
+		<div class="box">
+			<h1 class="details">Details</h1>
+
+			<p>Gear ratio: <span id="ratio_display" class="info_span">undefined</span></p>
+			<p>Output RPM: <span id="rpm_display" class="info_span">undefined</span></p>
+
+			<div id="wheel_size" class="selector">
+				<p>Wheel sizes (inches):</p>
+				<button>2</button>
+				<button>2.75</button>
+				<button>3.25</button>
+				<button>4</button>
+
+				<p>Linear speed: <span id="speed_display" class="info_span">undefined</span></p>
+			</div>
+		</div>
+
+		<!-- speed calculator
 		<div class="speed_calculator box">
 			<h1 class="rpm_h1">Speed calculator</h1>
 
@@ -60,7 +82,7 @@
 				<button id="calculate_speed">Calculate speed</button>
 			</div>
 
-		</div>
+		</div> -->
 
 	</div>
 
